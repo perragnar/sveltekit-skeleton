@@ -7,9 +7,7 @@ const config = {
 	preprocess: [
 		sveltePreprocess({
 			sourceMap: !production,
-			scss: {
-				prependData: '@import "src/scss/_variables.scss";'
-			}
+			scss: {}
 		})
 	],
 	kit: {
