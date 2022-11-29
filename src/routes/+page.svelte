@@ -37,10 +37,6 @@
 		-webkit-backdrop-filter: blur(4px);
 		color: #ffffff;
 
-		@media screen and (max-width: 768px) {
-			font-size: 0.8em;
-		}
-
 		&__header {
 			display: flex;
 			align-items: baseline;
