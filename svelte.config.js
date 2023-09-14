@@ -1,18 +1,18 @@
-import adapter from '@sveltejs/adapter-auto';
-import sveltePreprocess from 'svelte-preprocess';
+import adapter from '@sveltejs/adapter-auto'
+import sveltePreprocess from 'svelte-preprocess'
 
-const production = process.env.NODE_ENV !== 'development';
+const production = process.env.NODE_ENV !== 'development'
 
 const config = {
 	preprocess: [
 		sveltePreprocess({
 			sourceMap: !production,
-			scss: {}
+			postcss: {}
 		})
 	],
 	kit: {
 		adapter: adapter()
 	}
-};
+}
 
-export default config;
+export default config

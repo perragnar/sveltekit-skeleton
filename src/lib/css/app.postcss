@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'CRP Medium';
+	src:
+		local(sans-serif),
+		url('/src/lib/fonts/CRP-Medium.woff') format('woff'),
+		url('/src/lib/fonts/CRP-Medium.otf') format('opentype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CRP Bold';
+	src:
+		local(sans-serif),
+		url('/src/lib/fonts/CRP-Bold.woff') format('woff'),
+		url('/src/lib/fonts/CRP-Bold.otf') format('opentype');
+	font-display: swap;
+}
+
+html,
+body {
+	font-family:
+		'CRP Medium',
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji',
+		'Segoe UI Symbol';
+}
+
+body {
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:
+		'PT Sans',
+		'CRP Bold',
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji',
+		'Segoe UI Symbol';
+	text-wrap: balance;
+}
+
+a:hover {
+	@apply text-accent-focus;
+}
+
+a.link {
+	@apply text-accent no-underline;
+
+	&:hover {
+		@apply text-accent-focus underline;
+	}
+}
+
+/* Overrides max width on text */
+.prose {
+	@apply max-w-none;
+	@apply prose-h1:text-4xl
+	prose-h1:sm:text-3xl
+	prose-h1:md:text-4xl
+	prose-h2:text-2xl
+	prose-h2:sm:text-3xl
+	prose-h2:md:text-4xl
+	prose-a:text-accent
+	prose-a:no-underline
+	hover:prose-a:text-accent-focus
+	hover:prose-a:underline;
+}
