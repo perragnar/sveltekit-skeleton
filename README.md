@@ -1,6 +1,6 @@
 # SvelteKit skeleteon
 
-A simple SvelteKit skeleton with SCSS.
+A simple SvelteKit skeleton with Tailwind CSS and daisyUI.
 
 ## Requirements
 
